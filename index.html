@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>HTML5 doctype example</title>
+        <!-- lib -->
+        <script src="./old/MooTools.js"></script>
+        <script src="./old/WebComponent.js"></script>
+        <!-- old ui code  -->
+        <link rel="stylesheet" href="./old/global.css">
+        <link rel="stylesheet" href="./old/MyFunComponent.css" />
+        <script src="./old/MyFunComponent.js"></script>
+        <!-- new react -->
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+        <script type="text/babel" data-plugins="transform-es2015-modules-umd" src="./new/MyFunComponent.js"></script>
+    </head>
+    <body>
+        <h1>Make Mootools and React Talk</h1>
+        <div id="content">
+            <div id="new"></div>
+            <div id="old"></div>
+        </div>
+    </body>
+</html>
